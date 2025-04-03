@@ -1,0 +1,109 @@
+.upload-container {
+    border: 2px dashed #cccccc;
+    border-radius: 12px;
+    padding: 2rem;
+    text-align: center;
+    transition: all 0.3s ease;
+    max-width: 500px;
+    margin: 2rem auto;
+    background-color:  rgba(33, 150, 243, 0.1);
+  }
+  
+  .upload-container.drag-active {
+    border-color: #4CAF50;
+    background-color: rgba(76, 175, 80, 0.1);
+  }
+  
+  .upload-container.error {
+    border-color: #ff4444;
+    background-color: rgba(255, 68, 68, 0.1);
+  }
+  
+  .hidden-input {
+    display: none;
+  }
+  
+  .upload-label {
+    cursor: pointer;
+    display: block;
+  }
+  
+  .upload-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .upload-content p {
+    color: white;
+  }
+
+
+  .upload-icon {
+    font-size: 2.5rem;
+  }
+  
+  .supported-formats {
+    color: whitesmoke;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+  }
+  
+
+  .file-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .file-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .file-name {
+    font-weight: 500;
+    color: white;
+    max-width: 300px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  
+  .file-size {
+    color: whitesmoke;
+    font-size: 0.9rem;
+  }
+  
+  .action-buttons{
+    display:flex;
+    gap: 20px;
+  }
+  .remove-button {
+    background-color: #ff4444;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .remove-button:hover {
+    background-color: #cc0000;
+  }
+  
+  .error-message {
+    color: #ff4444;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+  }
+  
+  
+  .upload-container:not(.drag-active):not(.error):hover {
+    border-color: #2196F3;
+    background-color: rgba(33, 150, 243, 0.2);
+  }
