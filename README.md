@@ -52,3 +52,11 @@ export default tseslint.config({
   },
 })
 ```
+
+# How to start the application
+* Clone the repo in the same file as the server : [Encodec Server](https://github.com/Aurel88-00/Encodec_Server)
+* Change directory to Encodec_Frontend
+* Run npm i or npm i --force
+
+#The point of application
+The point of the application is to upload a audio file ( the user has the option to drag and drop an audio file) and the file is procesed via [ffmpeg](https://www.ffmpeg.org/) into a lossy compression.
