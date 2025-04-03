@@ -1,8 +1,10 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import React, { createContext, useState } from "react";
 import { UUIDTypes, v4 as uuidv4 } from "uuid";
 import ToastContainer from "../components/Toast/ToastContainer";
 import { Toast } from "../lib/types/toast.type";
 
+// eslint-disable-next-line react-refresh/only-export-components
 export const ToastContext = createContext({
   addToast: (message = "", type = "info", duration = 3000) => {},
   removeToast: (id: UUIDTypes | number) => {},
